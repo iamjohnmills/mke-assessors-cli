@@ -4,6 +4,8 @@ A command line tool that searches and scrapes real estate values from Milwaukee 
 
 <kbd>![Milwaukee Real Estate Values CLI](https://raw.githubusercontent.com/iamjohnmills/mke-assessors-cli/master/screenshot.gif)</kbd>
 
+<hr />
+
 Action | Command
 :--- | :---
 Docker Image | `docker build -t puppeteer-image .`
