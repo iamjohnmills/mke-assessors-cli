@@ -43,13 +43,14 @@ const init = async () => {
         last_sold: `${sales_parsed[0].sale_date.split('/')[2]} / $${Math.floor(sales_parsed[0].sale_price).toLocaleString('en-US')}`,
         last_assessed: `${assessments_parsed[0].year} / $${assessments_parsed[0].total_value}`,
       }
-      console.log('\n',util.inspect(condensed, { colors: true, showHidden: false, depth: null }) );
+      console.log(util.inspect(condensed, { colors: true }) );
       let input_show_more = null;
       while(input_show_more !== 'y' && input_show_more !== 'n'){
         input_show_more = await getInput('Show expanded data (y/n): ');
       }
       if(input_show_more === 'y'){
         console.log('\n',util.inspect(data, { colors: true, showHidden: false, depth: null }) );
+        throw 'Done.'
       } else {
         throw 'Done.'
       }
