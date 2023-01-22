@@ -2,7 +2,7 @@
 
 A command line tool that searches and scrapes real estate values from Milwaukee Assessors Office website and normalizes the results into a JSON object.
 
-<kbd>![Milwaukee Real Estate Values CLI](https://raw.githubusercontent.com/iamjohnmills/mke-assessors-cli/master/screenshot.gif)</kbd>
+![Milwaukee Real Estate Values CLI](https://raw.githubusercontent.com/iamjohnmills/mke-assessors-cli/master/screenshot.gif)
 
 <hr />
 
