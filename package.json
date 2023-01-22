@@ -1,0 +1,15 @@
+{
+  "name": "mke-assessors-cli",
+  "version": "1.0.0",
+  "description": "Scrapes real estate values from Milwaukee Assessors Office website.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "John Mills",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^21.0.0",
+    "puppeteer": "^19.3.0"
+  }
+}
