@@ -56,7 +56,7 @@ const parseSummary = async (string) => {
     },
     zoning_code: tds[15].textContent.trim(),
     narrative_description: ( () => {
-      const lines = tables[3].querySelector('strong').textContent.trim().split('\n');
+      const lines = tables[5].querySelector('strong').textContent.trim().split('\n');
       const description = lines.map(line => line.trim() ).join(' ').trim();
       return {
         text: description,
@@ -71,7 +71,7 @@ const parseSummary = async (string) => {
       }
     })(),
     legal_description: (() => {
-      const lines = tables[4].querySelector('strong').innerHTML.replace(/\t/gi,'').split('\n');
+      const lines = tables[6].querySelector('strong').innerHTML.replace(/\t/gi,'').split('\n');
       return lines.map(line => line.trim() ).join(' ').trim();
     })(),
   }
